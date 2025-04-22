@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Editor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Task Editor</h1>
+
+    <button id="addTaskBtn" class="green-btn">Add Task</button>
+
+    <label for="taskSelect">Edit Existing Task:</label>
+    <select id="taskSelect">
+      <option value="">-- Select Task --</option>
+    </select>
+
+    <form id="taskForm">
+      <label>Title: <input type="text" id="taskTitle" disabled></label>
+
+      <label>Level:
+        <select id="taskLevel" disabled>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </label>
+
+      <label>Time Weight:
+        <select id="taskWeight" disabled>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </label>
+
+      <label>Periodicity (days):
+        <input type="number" id="taskPeriodicity" min="1" disabled>
+      </label>
+
+      <label>SOP Location:
+        <input type="text" id="taskSopLocation" disabled>
+      </label>
+
+      <label>Written SOP:
+        <textarea id="taskSop" rows="4" disabled></textarea>
+      </label>
+
+      <button type="submit" id="submitTaskBtn" disabled>Save Task</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

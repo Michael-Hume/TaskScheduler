@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Editor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Employee Editor</h1>
+
+    <button id="addEmployeeBtn" class="green-btn">Add Employee</button>
+
+    <label for="employeeSelect">Edit Existing Employee:</label>
+    <select id="employeeSelect">
+      <option value="">-- Select Employee --</option>
+    </select>
+
+    <form id="employeeForm">
+      <label>Name:
+        <input type="text" id="empName" disabled>
+      </label>
+
+      <label>Max Level:
+        <select id="empMaxLevel" disabled>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </label>
+
+      <label>Work Days (comma-separated):
+        <input type="text" id="empWorkDays" placeholder="e.g. Monday,Tuesday" disabled>
+      </label>
+
+      <label>Days Off (YYYY-MM-DD, comma-separated):
+        <input type="text" id="empDaysOff" placeholder="e.g. 2025-05-01,2025-05-15" disabled>
+      </label>
+
+      <button type="submit" id="submitEmpBtn" disabled>Save Employee</button>
+    </form>
+  </div>
+
+  <script src="employee-editor.js"></script>
+</body>
+</html>
